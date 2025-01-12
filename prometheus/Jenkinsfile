@@ -1,7 +1,7 @@
 pipeline {
     agent { label 'node2' }
     stages {
-        stage('Grafana Installation') {
+        stage('prometheus Installation') {
             steps {
                 sh '''
                 export ANSIBLE_HOST_KEY_CHECKING=False
