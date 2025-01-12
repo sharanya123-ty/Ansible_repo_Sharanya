@@ -1,0 +1,13 @@
+pipeline {
+    agent { label 'node2' }
+    stages {
+        stage('prometheus Installation') {
+            steps {
+                sh '''
+                export ANSIBLE_HOST_KEY_CHECKING=False
+                ansible-playbook -i /etc/ansible/hosts /opt/ansible_roles/prometheus.yml -vv
+                '''
+            }
+        }
+    }
+} 
