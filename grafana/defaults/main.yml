@@ -1,0 +1,8 @@
+---
+# defaults file for Grafana
+# defaults file for grafana_install
+grafana_version: 10.0.2
+grafana_repo_url: "https://packages.grafana.com/oss/rpm"
+grafana_gpg_key: "https://packages.grafana.com/gpg.key"
+grafana_install_dir: "/usr/share/grafana"
+grafana_service_name: "grafana-server"
